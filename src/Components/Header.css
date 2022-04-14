@@ -1,0 +1,47 @@
+@import"bootstrap/dist/css/bootstrap.min.css";
+*{
+    font-family: "Montserrat Alternates", sans-serif !important;
+    /* color: #000; */
+    cursor: default;
+}
+.nav-menu {
+    /* display: block; */
+    /* position: relative; */
+    color: rgba(255, 255, 255, 0.7);
+    /* transition: 0.3s; */
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 100%;
+    position: sticky; 
+     
+    font-family: "Montserrat Alternates", sans-serif;
+      }
+.nav-menus1{
+    color: rgba(255, 255, 255, 0.7) !important;
+    position: relative;
+       
+}
+.nav-menus1:hover{
+    display: block;
+    position: relative;
+    color: white !important;
+    transition: 0.3s;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0 3px;
+}
+.nav-menus1:before{
+        content: '';
+        position: absolute;
+        width: 0px;
+        height: 3px;
+        background-color: #FFF;
+        bottom: 0px;
+        visibility: hidden;
+        transition: 0.5s;
+        }
+.nav-menus1:hover::before{
+    visibility: visible;
+    width: 100%;
+    
+}
